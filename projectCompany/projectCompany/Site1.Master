@@ -1,0 +1,94 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="projectCompany.Site1" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,body{
+            height: 100%;
+            margin: 0;
+        }
+        body{
+            background-color: #36445d;
+        }
+        nav{
+            height: 10%;
+            background-color: #111d33;
+            padding: 10px;
+            color: white;
+            justify-content: end;
+            position: relative;
+        }
+        nav h2{
+            width: 250px;
+            margin: 0;
+            float: left;
+            text-align: center;
+            line-height: 100px;
+        }
+        nav ul{
+            list-style: none;
+            justify-content: end;
+            float: right;
+            width: 80%;
+            font-size: 25px;
+        }
+        nav ul li{
+            float: left;
+            width: 123px;
+            text-align: center;
+            height: 50px;
+            line-height: 50px;
+            margin-left: 17px;
+        }
+        nav ul li a{
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+        nav ul li a:hover{
+            background-color: white;
+            padding: 10px;
+            color: #111d33;
+        }
+        main{
+            height: 80%;
+        }
+        footer{
+            background-color:#111d33 ;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            height: 10%;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <nav>
+        <h2>Company Security</h2>
+        <ul class="menu">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            
+            <li><a href="#">Contact</a></li>
+            <li class="slider"></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="main">
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+        </div>
+    </main>
+    <footer>
+        <h4>ASP project &copy; CHI 2020</h4>
+    </footer>
+    </form>
+</body>
+</html>
